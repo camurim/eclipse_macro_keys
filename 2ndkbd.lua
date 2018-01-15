@@ -5,6 +5,8 @@
 -- There may be a better, more permanent solution, but I don't know it.
 lmc_assign_keyboard('MACROS');
 
+lmc.minimizeToTray = true
+
 sendToAHK = function (key)
       --print('It was assigned string:    ' .. key)
       local file = io.open(os.getenv("TEMP") .. "\\keypressed.txt", "w") -- writing this string to a text file on disk is probably NOT the best method. Feel free to program something better!
